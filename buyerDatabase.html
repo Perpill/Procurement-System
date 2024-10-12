@@ -209,22 +209,19 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Buyer Database</h1>
-                    </div>
-
                     <!-- Content Row -->
                     <nav class="navbar navbar-light bg-light justify-content-between">
                         <a class="navbar-brand btn btn-primary my-2 my-sm-0 text-light" href="newBuyer.html">New Buyer</a>
-                        <form class="form-inline">
-                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+                        
                       </nav>
-
-                    <table id="example" class="table table-striped" style="width:100%">
-                        <thead>
+                      <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Buyer Database</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Buyers</th>
@@ -252,20 +249,6 @@
                         </tbody>
                     </table>
                     
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                          <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                          </li>
-                        </ul>
-                      </nav>
-
                 </div>
                 <!-- /.container-fluid -->
 
@@ -327,9 +310,13 @@
     <script src="./js/sidebarManager.js"></script>
     <script src="./js/footerManager.js"></script>
     <script src="./js/headManager.js"></script>
-    <script src="./js/footerManager.js"></script>
-    <script src="./js/headManager.js"></script>
-    <script src="./js/headManager.js"></script>
+    
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
