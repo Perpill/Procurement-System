@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<special-header></special-header>
+<head>
+    <script src="./js/sidebarManager.js"></script>
+    <script src="./js/footerManager.js"></script>
+    <script src="./js/headManager.js"></script>
+
+    <special-header></special-header>
+</head>
 
 <body id="page-top">
 
@@ -211,16 +217,12 @@
                     <!-- Page Heading -->
                     <nav class="navbar navbar-light bg-light justify-content-between">
                         <h1 class="navbar-brand my-2 my-sm-0 text-dark">Coop Bank</h1>
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search Buyer"
-                                aria-label="Search">
-                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+
                     </nav>
 
                     <!-- Content Row -->
 
-                    <table id="example" class="table table-striped" style="width:100%">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -289,7 +291,7 @@
                                 <td><a href="coopBankSupplierPrequalification.html">Cooperative Bank </a></td>
                                 <td>Supplier</td>
                                 <td>Prequalification</td>
-                                <td>2025-2026</td>
+                                <td>2025-2027</td>
                                 <td>
                                     <ul class="list-group">
                                         <li class="list-group-item"><a href="">Letters</a></li>
@@ -304,20 +306,6 @@
                         </tbody>
 
                     </table>
-
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -386,6 +374,13 @@
     <script src="./js/sidebarManager.js"></script>
     <script src="./js/footerManager.js"></script>
     <script src="./js/headManager.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

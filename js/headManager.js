@@ -1,6 +1,6 @@
 class SpecialHeader extends HTMLElement {
     connectedCallback() {
-      this.innerHTML = `<head>
+      this.innerHTML = `
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@ class SpecialHeader extends HTMLElement {
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-</head>`;
+`;
     }
   }
   

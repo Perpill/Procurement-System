@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<special-header></special-header>
+<head>
+    <script src="./js/sidebarManager.js"></script>
+    <script src="./js/footerManager.js"></script>
+    <script src="./js/headManager.js"></script>
+
+    <special-header></special-header>
+</head>
 
 <body id="page-top">
 
@@ -9,7 +15,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        
+
         <special-sidebar></special-sidebar>
         <!-- End of Sidebar -->
 
@@ -209,114 +215,182 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Content Row -->
-                    <nav class="navbar navbar-light bg-light justify-content-between">
-                        <a class="navbar-brand btn btn-primary my-2 my-sm-0 text-light" href="newBuyer.html">New Buyer</a>
-                        
-                      </nav>
-                      <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Buyer Database</h6>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">New Buyer</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="name">Buyer Name</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="name" class="form-control" id="inputEmail3"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Initials</label><br>
+                                                    <!-- <label for="inputPassword3">Initials</label> -->
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control" id="inputPassword3"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3">Contact
+                                                        Person</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control" id="inputPassword3"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3">Contact
+                                                        Phone Number</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control" id="inputPassword3"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3">Buyer
+                                                        Portal Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control" id="inputPassword3"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Create</button>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3 row justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Buyer Database</h6>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            New Buyer
+                        </button>
+                        </div>
+
+
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Buyers</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                    
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Buyers</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><a href="cooperativeBank.html">Cooperative Bank</a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <!-- /.container-fluid -->
+
+                        </div>
+                        <!-- End of Main Content -->
+
+                        <!-- Footer -->
+                        <special-footer></special-footer>
+                        <!-- End of Footer -->
+
+                    </div>
+                    <!-- End of Content Wrapper -->
+
                 </div>
-                <!-- /.container-fluid -->
+                <!-- End of Page Wrapper -->
 
-            </div>
-            <!-- End of Main Content -->
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
 
-            <!-- Footer -->
-            <special-footer></special-footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
+                <!-- Logout Modal-->
+                <div class="modal fade bd-example-modal-lg" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="login.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+                <!-- Page level plugins -->
+                <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+                <!-- Page level custom scripts -->
+                <script src="js/demo/chart-area-demo.js"></script>
+                <script src="js/demo/chart-pie-demo.js"></script>
 
-    <script src="./js/sidebarManager.js"></script>
-    <script src="./js/footerManager.js"></script>
-    <script src="./js/headManager.js"></script>
-    
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+                <script src="./js/sidebarManager.js"></script>
+                <script src="./js/footerManager.js"></script>
+                <script src="./js/headManager.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+                <!-- Page level plugins -->
+                <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+                <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+                <!-- Page level custom scripts -->
+                <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

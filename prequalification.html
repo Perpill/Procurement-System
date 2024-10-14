@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<special-header></special-header>
+<head>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/sidebarManager.js"></script>
+    <script src="./js/footerManager.js"></script>
+    <script src="./js/headManager.js"></script>
+
+    <special-header></special-header>
+</head>
 
 <body id="page-top">
 
@@ -208,23 +218,18 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div> -->
-
                     <!-- Content Row -->
-                    <nav class="navbar navbar-light bg-light justify-content-between">
+                    <!-- <nav class="navbar navbar-light bg-light justify-content-between">
                         <a class="navbar-brand btn btn-primary my-2 my-sm-0 text-light"
                             href="newPrequalification.html">New Prequalification</a>
 
-                    </nav>
+                    </nav> -->
 
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
+                        <div class="card-header py-3 row justify-content-between">
                             <h6 class="m-0 font-weight-bold text-primary">Prequalifications</h6>
+                            <a class="navbar-brand btn btn-primary my-2 my-sm-0 text-light"
+                            href="newPrequalification.html">New Prequalification</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -308,9 +313,7 @@
             </div>
         </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
         <!-- Core plugin JavaScript-->
         <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -325,9 +328,6 @@
         <script src="js/demo/chart-area-demo.js"></script>
         <script src="js/demo/chart-pie-demo.js"></script>
 
-        <script src="./js/sidebarManager.js"></script>
-        <script src="./js/footerManager.js"></script>
-        <script src="./js/headManager.js"></script>
 
         <!-- Page level plugins -->
         <script src="vendor/datatables/jquery.dataTables.min.js"></script>
@@ -335,6 +335,8 @@
 
         <!-- Page level custom scripts -->
         <script src="js/demo/datatables-demo.js"></script>
+
+
 
 </body>
 

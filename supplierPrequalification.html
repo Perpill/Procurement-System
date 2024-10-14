@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<special-header></special-header>
+<head>
+    <script src="./js/sidebarManager.js"></script>
+    <script src="./js/footerManager.js"></script>
+    <script src="./js/headManager.js"></script>
+
+    <special-header></special-header>
+</head>
 
 <body id="page-top">
 
@@ -208,21 +214,17 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div> -->
-
                     <!-- Content Row -->
                     <nav class="navbar navbar-light bg-light justify-content-between">
                         <input type="submit" class="btn btn-outline-primary my-2 my-sm-0"
                             value="Download Questions template" />
                         <form class="form-inline">
-                            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                            <a href="addCategory.html" class="btn btn-primary my-2 my-sm-0" type="submit">Add
-                                category</a>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary my-2 my-sm-0" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Add category
+                            </button>
                         </form>
                     </nav>
 
@@ -245,26 +247,70 @@
                             date</button>
                     </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Add Category</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <form>
+                                            <div class="mb-3">
+                                                <!-- <label for="inputEmail" class="form-label">Category name</label> -->
+                                                <input type="email" class="form-control" placeholder="Category name"
+                                                    id="inputEmail" aria-describedby="emailHelp">
+                                                <!-- <div id="emailHelp" class="form-text">Supply of office stationery</div> -->
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control" placeholder="Category code"
+                                                    id="inputPassword">
+                                            </div>
 
 
-                    <table id="example" class="table table-striped" style="width:100%">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <input type="email" class="form-control" id="inputEmail4"
+                                                        placeholder="Opening Date">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <input type="password" class="form-control" id="inputPassword4"
+                                                        placeholder="Time">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <input type="email" class="form-control" id="inputEmail4"
+                                                        placeholder="Closing Date">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <input type="password" class="form-control" id="inputPassword4"
+                                                        placeholder="Time">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Categories</th>
-                                <th>
-                                    <nav class="navbar navbar-light bg-light justify-content-between">
-
-                                        <form class="form-inline">
-                                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                                aria-label="Search">
-                                            <button class="btn btn-outline-primary my-2 my-sm-0"
-                                                type="submit">Search</button>
-                                        </form>
-                                    </nav>
-                                </th>
+                                <th>-</th>
                                 <th>Action</th>
-                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -273,7 +319,7 @@
                                 <td>
                                     <a href="supplyOfOffice2.html">Supply of drinking water</a>
                                 </td>
-                                <td></td>
+                                <td>_</td>
                                 <td><span class="btn btn-sm">Duplicate</span><span class="btn btn-sm">Edit</span>
                                 </td>
                             </tr>
@@ -307,29 +353,7 @@
                             </tr>
 
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <!-- <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th> -->
-                            </tr>
-                        </tfoot>
                     </table>
-
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -338,13 +362,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <!-- <span>Copyright &copy; Your Website 2021</span> -->
-                    </div>
-                </div>
-            </footer>
+            <special-footer></special-footer>
             <!-- End of Footer -->
 
         </div>
@@ -399,6 +417,12 @@
     <script src="./js/footerManager.js"></script>
     <script src="./js/headManager.js"></script>
 
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>

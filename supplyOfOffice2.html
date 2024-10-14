@@ -43,7 +43,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-   <special-sidebar></special-sidebar>
+    <special-sidebar></special-sidebar>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -253,13 +253,17 @@
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-2">
                     <div class="u-container-layout u-container-layout-2">
-                     
+
                       <div class="row">
                         <div class="col-8">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action u-align-center u-text u-text-default u-text-1 active " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">SECTIONS</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Registration Documents</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Technical Documents</a>
+                            <a class="list-group-item list-group-item-action u-align-center u-text u-text-default u-text-1 active "
+                              id="list-home-list" data-toggle="list" href="#list-home" role="tab"
+                              aria-controls="home">SECTIONS</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                              href="#list-profile" role="tab" aria-controls="profile">Registration Documents</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                              href="#list-messages" role="tab" aria-controls="messages">Technical Documents</a>
                             <!-- <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a> -->
                           </div>
                         </div>
@@ -280,8 +284,45 @@
             </div>
             <div class="item"></div>
             <div   class="item">
-              <div class="custom-expanded u-table u-table-responsive u-table-1">
-                <table class="u-table-entity">
+              <table class="table table-bordered" id="dataTable" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cooperative Bank</td>
+                    <td>Supplier</td>
+                    <td>Prequalification</td>
+                    <td>2024-2026</td>
+                  </tr>
+                  <tr>
+                    <td>Cooperative Bank</td>
+                    <td>Supplier</td>
+                    <td>Prequalification</td>
+                    <td>2024-2026</td>
+                  </tr>
+                  <tr>
+                    <td>Cooperative Bank</td>
+                    <td>Supplier</td>
+                    <td>Prequalification</td>
+                    <td>2024-2026</td>
+                  </tr>
+                  <tr>
+                    <td>Cooperative Bank</td>
+                    <td>Supplier</td>
+                    <td>Prequalification</td>
+                    <td>2024-2026</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <!-- <div class="custom-expanded u-table u-table-responsive u-table-1">
+                <table class="u-table-entity" id="dataTable">
                   <colgroup>
                     <col width="25%">
                     <col width="25%">
@@ -293,16 +334,7 @@
                       <td class="u-border-1 u-border-grey-30 u-table-cell">#</td>
                       <td class="u-border-1 u-border-grey-30 u-table-cell"> Suppliers</td>
                       <td class="u-border-1 u-border-grey-30 u-table-cell">Action </td>
-                      <td class="u-border-1 u-border-grey-30 u-table-cell"> 
-                        <nav class="navbar navbar-light bg-light justify-content-between">
-
-                          <form class="form-inline">
-                              <input class="form-control sm" type="search" placeholder="Search"
-                                  aria-label="Search">
-                              <button class="btn btn-outline-primary btn-sm"
-                                  type="submit">Search</button>
-                          </form>
-                      </nav>
+                      <td class="u-border-1 u-border-grey-30 u-table-cell"> _
                       </td>
                     </tr>
                     <tr style="height: 45px;">
@@ -330,7 +362,7 @@
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -398,9 +430,15 @@
   <script src="js/demo/chart-pie-demo.js"></script>
 
   <script src="./js/sidebarManager.js"></script>
-    <script src="./js/footerManager.js"></script>
-    <script src="./js/headManager.js"></script>
+  <script src="./js/footerManager.js"></script>
+  <script src="./js/headManager.js"></script>
 
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>
